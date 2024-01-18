@@ -15,13 +15,16 @@ export default function ClientCounter(props: {
   const counter = usePreloadedQuery(props.preloadedCounter);
   return (
     <>
-      <p className="">
-        The counter is {counter ?? "SHOULD NEVER SEE WITH RSC!"}
+      <p className="text-xl">
+        The current counter is{" "}
+        <strong>{counter ?? "SHOULD NEVER SEE WITH RSC!"}</strong>
+      </p>
+      <p>
         <button
           onClick={() => increment()}
-          className="cursor-pointer block border-2 rounded p-4 bg-orange-300"
+          className="cursor-pointer block my-3 border-2 rounded p-4 bg-orange-200 dark:bg-orange-900 dark:text-white"
         >
-          Increment
+          Increment it!
         </button>
       </p>
     </>

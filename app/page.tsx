@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-8">
       <h1 className="text-4xl">Demo of Convex 1.8 and Next.js RSC</h1>
       <div className="max-w-[640px] leading-6">
         This is a server-side rendered counter with a React Server Component
@@ -20,7 +20,7 @@ export default function Home() {
           className="underline cursor-pointer"
           href="https://github.com/get-convex/preloaded-counter"
         >
-          Checkout the code on GitHub.
+          Check out the code on GitHub.
         </Link>
       </div>
       <ServerCounter />
